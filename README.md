@@ -14,8 +14,8 @@ SQLite3
 
 # Installation
 Clone the Repository:
-```
-git clone https://github.com/yourusername/marktplaats-scraper.git
+```js
+git clone
 cd marktplaats-scraper
 npm i --save
 ```
@@ -24,9 +24,7 @@ npm i --save
 As this scraper is part of a larger, but private infrastructure, 
 we are manually having to inject links to scrape. These links should be sub/or categories of marktplaats listings to listen to.
 
-```
-Create a new code block and execute the following snippet.
-example:
+```js
 (async() => {
 await execute(`INSERT INTO links (id, link, categorie_id) VALUES (?, ? ,?), [id_hier, link_hier, category_hier]);
 })()
